@@ -1,34 +1,40 @@
+import { Award, Sparkles, Calendar } from "lucide-react";
+
 export default function Features() {
     const features = [
         {
-            icon: "🧹", // You can replace with lucide icons later if preferred
+            icon: <Award className="w-12 h-12" />,
+            color: "text-amber-500",
+            bgColor: "bg-amber-50",
             title: "Expert Cleaning",
-            description: "From kitchens to bathrooms and living spaces, our detailed cleaning approach ensures every corner."
+            description: "From kitchens to bathrooms and living spaces, we pay attention to every detail that matters."
         },
         {
-            icon: "✨",
+            icon: <Sparkles className="w-12 h-12" />,
+            color: "text-emerald-500",
+            bgColor: "bg-emerald-50",
             title: "Eco-Friendly Products",
-            description: "We use environmentally friendly and non-toxic cleaning solutions, ensuring the safety of your family."
+            description: "We use environmentally friendly cleaning solutions that are safe for your family and pets."
         },
         {
-            icon: "🧺",
+            icon: <Calendar className="w-12 h-12" />,
+            color: "text-rose-400",
+            bgColor: "bg-rose-50",
             title: "Flexible Scheduling",
-            description: "Whether you need a one-time deep clean, weekly maintenance, or special event preparation."
+            description: "One-time deep cleans, regular maintenance, or move-out cleaning. We work around your schedule."
         }
     ];
 
     return (
-        <section className="bg-[#fbfcfa] py-24 px-8">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+        <section className="bg-[#F5F0E6] py-24 px-8">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 text-center">
                 {features.map((feature, index) => (
                     <div key={index} className="flex flex-col items-center">
-                        <div className="mb-6 text-6xl">{feature.icon}</div>
-                        {/* Note: In a real polish phase, I'd use the exact colorful illustrations from the screenshot or similar SVG assets. 
-                 For now, emojis or Lucide icons are placeholders, but I will try to use Lucide with colors to match better if needed.
-                 The screenshot has nice flat illustrations. I'll stick to a clean look. 
-             */}
-                        <h3 className="text-2xl font-medium text-slate-900 mb-4">{feature.title}</h3>
-                        <p className="text-gray-500 leading-relaxed max-w-sm">{feature.description}</p>
+                        <div className={`mb-6 p-5 rounded-2xl ${feature.bgColor} ${feature.color}`}>
+                            {feature.icon}
+                        </div>
+                        <h3 className="text-xl font-bold text-slate-900 mb-4">{feature.title}</h3>
+                        <p className="text-slate-600 leading-relaxed">{feature.description}</p>
                     </div>
                 ))}
             </div>
