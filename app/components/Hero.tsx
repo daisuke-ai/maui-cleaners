@@ -20,7 +20,7 @@ export default function Hero() {
                 <div className="flex items-center gap-6">
                     <div className="hidden md:flex items-center gap-2">
                         <Phone className="w-4 h-4" />
-                        <span>(808) 555-0123</span>
+                        <span>(808) 276-8714</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <Mail className="w-4 h-4" />

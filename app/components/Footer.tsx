@@ -116,7 +116,7 @@ export default function Footer() {
                             </a>
 
                             <a
-                                href="tel:+1234567890"
+                                href="tel:+18082768714"
                                 className="flex items-start gap-3 text-slate-400 hover:text-white transition-colors group"
                             >
                                 <div className="w-10 h-10 bg-slate-800 group-hover:bg-[#2d4df5] rounded-lg flex items-center justify-center flex-shrink-0 transition-colors">

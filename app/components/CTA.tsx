@@ -64,7 +64,7 @@ export default function CTA() {
                         {/* Contact Options */}
                         <div className="space-y-4 mb-8">
                             <a
-                                href="tel:+1234567890"
+                                href="tel:+18082768714"
                                 className="flex items-center gap-4 p-4 rounded-xl border-2 border-slate-100 hover:border-[#2d4df5] hover:bg-[#2d4df5]/5 transition-all duration-300 group"
                             >
                                 <div className="w-14 h-14 bg-[#2d4df5] rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
@@ -77,7 +77,7 @@ export default function CTA() {
                             </a>
 
                             <a
-                                href="sms:+1234567890"
+                                href="sms:+18082768714"
                                 className="flex items-center gap-4 p-4 rounded-xl border-2 border-slate-100 hover:border-[#2d4df5] hover:bg-[#2d4df5]/5 transition-all duration-300 group"
                             >
                                 <div className="w-14 h-14 bg-[#FFEB3B] rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
